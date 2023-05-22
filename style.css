@@ -92,6 +92,21 @@ nav {
     color: black;
   }
 
+  #paragrafKutuX{
+    margin-left: -1300px;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: black;
+  }
+
+  #paragrafKutuY{
+    margin-left: -1200px;
+    margin-top: 130px;
+    border-radius: 10px;
+    color: black;
+  }
+
+
   .paragraf {
     background-color: rgba(255, 255, 255, 0.85); /* Saydam arkaplan rengi */
     display: inline-block;
