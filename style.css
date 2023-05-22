@@ -85,42 +85,49 @@ nav {
     z-index: 2;
   }
 
-  .paragrafKutu{
-    margin-left: -1400px;
-    margin-top: -20px;
-    border-radius: 10px;
-    color: black;
-  }
-
-  #paragrafKutuX{
-    margin-left: -1300px;
+  .hakkimdaDiv{
+    position: absolute;
+    margin-left: 100px;
     margin-top: 100px;
-    border-radius: 10px;
+    border-radius: 0px;
     color: black;
   }
-
-  #paragrafKutuY{
-    margin-left: -1200px;
-    margin-top: 130px;
-    border-radius: 10px;
-    color: black;
-  }
-
-
+  
   .paragraf {
-    background-color: rgba(255, 255, 255, 0.85); /* Saydam arkaplan rengi */
-    display: inline-block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
-
-    width: 500px; /* Belirlediğiniz genişlik değeri */
-    overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.85); /* Saydam arkaplan rengi */
+      display: inline-block;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: large;
+      
+      width: 500px; /* Belirlediğiniz genişlik değeri */
+      overflow: hidden;
     white-space: normal;
     word-wrap: break-word;
     word-break: break-all;
-  }
+}
 
-  @keyframes slideRight {
+.paragrafKutu{
+  margin-left: -1400px;
+  margin-top: -20px;
+  border-radius: 10px;
+  color: black;
+}
+
+#paragrafKutuX{
+  margin-left: -1300px;
+  margin-top: 100px;
+  border-radius: 10px;
+  color: black;
+}
+
+#paragrafKutuY{
+  margin-left: -1200px;
+  margin-top: 130px;
+  border-radius: 10px;
+  color: black;
+}
+
+@keyframes slideRight {
     0% {
         transform: translateX(-100%);
         opacity: 0;
