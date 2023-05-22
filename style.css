@@ -1,0 +1,121 @@
+nav {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: flex;
+    animation-name: explode;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.navbar li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.navbar li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.navbar li a {
+    text-decoration: none;
+    top: 100px;
+    color: #225ff9;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; /* Yumuşak bir fontu tercih edebilirsiniz */
+}
+
+
+
+@keyframes explode {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+
+  .centered {
+    position: absolute;
+    top: 5%;
+    padding-left: 40px;
+    z-index: 2;
+  }
+
+  .paragrafKutu{
+    margin-left: -1400px;
+    margin-top: -20px;
+    border-radius: 10px;
+    color: black;
+  }
+
+  .paragraf {
+    background-color: rgba(255, 255, 255, 0.85); /* Saydam arkaplan rengi */
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+
+    width: 500px; /* Belirlediğiniz genişlik değeri */
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  @keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animasyon{
+    animation: slideRight 0.5s forwards;
+}
